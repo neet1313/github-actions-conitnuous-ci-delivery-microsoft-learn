@@ -18,11 +18,11 @@ jobs:
             - name: setup python
               uses: actions/setup-python@v4
               with: 
-                python-versions: 3.13
+                python-version: 3.13
 
             - name: Install dependencies
               run: |
-                pip install -r requests.txt
+                pip install -r requirements.txt
                 pip install pytest==8.4.1
                 pip instal coverage==7.9
                 pip install pytest-cov==6.2.1
